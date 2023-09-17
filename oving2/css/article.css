@@ -1,0 +1,61 @@
+article {
+    width: 960px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p, blockquote, ul, ol {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+#facts {
+    margin: 1em 0em 1em 1em;
+    width: 50%;
+    border: 1px dashed;
+    float: right;
+}
+
+#facts > ul {
+    list-style-image: url('img/cup-icon.svg');
+
+    /* moved "cup-icon.svg" to the css-folder for easier access to it */
+
+    line-height: 150%;
+    padding-left: 1.5em;
+}
+
+
+img {
+    width: 960px;
+    max-width: 75ch;
+    margin: auto;
+}
+
+#byline1 {
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+    color: #323232;
+    line-height: 150%;
+}
+
+article {
+    max-width: 75ch;
+    margin: auto;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,15 @@
+Questions:
+
+- We can use ID when we want a CSS style to be used for only one or a few elements, and we can use .class when we want a style to be used for one or more groups (classes) of objects. 
+Concrete examples can be to use #id for a single button on a page, and we could use .class for other buttons that we want to have the same style.
+
+- RGBA can define what color some object will have. The R stands for "Red", G for "Green" and B for "Blue". Out of those color (light) we can make every color. We define this binary, each color represented by one byte (8 bits), which means that we give every color a number between 0 and 255. 000000 will be black, and FFFFFF will be white as an example.
+The A stands for "Alpha" and defines how transparent the color will be. It goes from a scale from 0 to 1, where 0 is 100% transparent, and 1 is not transparent at all.
+
+This selector matches all the elements p inside the article:
+
+article > p {
+
+}
+
+which basically refers to all the elements <p>, whose parent is an <article> element.
