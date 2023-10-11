@@ -1,0 +1,25 @@
+/* Part 2 */
+
+body {
+    min-height: 90vh; /* Sikrer at størrelsen på body holder en viss størrelse */
+    position: relative;
+}
+
+footer {
+    margin-top: 50px;
+    position: absolute; /* Setter posisjon i forhold til body */
+    bottom: -100px;
+    padding-bottom: 30px;
+    
+}
+
+/* Part 3 */
+
+ul {
+    list-style-type: square;
+}
+
+li li:last-child { /* li li sikrer at vi kun velger li elementer inni et annet li element */
+    color: red;
+}
+

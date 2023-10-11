@@ -1,0 +1,66 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: white;
+    font-family: arial, sans-serif;
+  }
+
+  #screen {
+    position: relative;
+  }
+
+  video {
+    height: auto;
+    width: 100%;
+  }
+    
+  #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #title > img {
+    width: 100%;
+  }
+
+  article {
+    width: 720px; /* Kunne endret her også, men skriver heller over i klassen .content, så her blir det noe dobbelt */
+    margin: 20px 50px; /* Viktigste er at bredden blir overskrevet av et maksimumskrav. Den kan f.eks. ikke være 720px dersom bredden i browser er mindre enn dette. */
+  }
+
+  p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .content {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #mobilepic > img {  /* Velger elementet img inni div-elementet */
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 939px) {
+    
+    #video {
+      display: none;
+    }
+
+  }
+
+  @media (min-width: 940px) {
+
+    #mobilepic {
+      display: none;
+    }
+  }
