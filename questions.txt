@@ -1,0 +1,16 @@
+1.
+The difference between "posittion: absolute" and "position: fixed" is that the element with the absolute position is positioned relative to the nearest positioned ancestor,
+while the element with position fixed is placed relative to the viewport (will stay at the same place when you scroll on the page)
+
+2.
+We can use the nth-of-type() selector to select elements inside other elements. To select the third element within another element we need to use it like:
+
+p:nth-of-type(3) {
+
+}
+
+3.
+The width is 320px.
+Therefore the snippet will have no effect on this visitors device, becauuse in order for this snippet to have some effect the width cannot be less than 768px,
+when at the same time not being more than 1024px. It is not more than 1024px, so that criteria is met, but the width is less than 768px, and therefore it has no effect.
+
