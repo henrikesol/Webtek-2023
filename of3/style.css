@@ -1,0 +1,49 @@
+/* p:first-of-type{
+    color: red;
+} */
+
+div > p {
+    color: red;
+}
+
+a:visited {
+    color:  aqua;
+}
+
+a:active {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+#video-container {
+    width: 70%;
+    margin: auto;
+    min-width: 500px;
+
+}
+
+video {
+    width: 100%;
+    /* 100% av parent (div) */
+}
+
+h1 {
+    text-align: center;
+}
+
+#invisible {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    video {
+        display: none;
+    }
+
+    #invisible {
+        display: block;
+    }
+}
