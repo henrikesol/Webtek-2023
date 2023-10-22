@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h2> Form for superheroes! </h2>
+
+        <h3> Note that all questions have to be answered in order to subit the form </h3>
+
+        <form name="Form" action="https://folk.ntnu.no/anderobs/webtek/receive_form.php" method="post" onsubmit="return validateForm()">
+            
+            <label for="name"> Name: </label>
+            <input type="text" name="name" id="name" required><br>
+
+            <br>
+
+            <label for="gender"> Gender: </label> <br>
+
+            <label for="gender"> Male </label>
+            <input type="radio" name="gender" id="male"><br>
+            <label for="gender"> Female </label>
+            <input type="radio" name="gender" id="female"><br>
+            <label for="gender"> Other </label>
+            <input type="radio" name="gender" id="other"> <br>
+
+            <br>
+
+            <label for="E-mail"> E-mail: </label>
+            <input type="text" name="email" id="e-mail" required><br>
+
+            <br>
+
+            <label for="Birthdate"> Birthdate: </label>
+            <input type="date" name="birthdate" id="birthdate" required> <br>
+
+            <br>
+
+            <label for="Heroname"> Hero name: </label>
+            <input type="text" name="heroname" id="hero_name" required> <br>
+
+            <br>
+
+            <label for="spandex"> Do you wear a spandex? </label> <br>
+
+            <label for="spandex"> Yes </label>
+            <input type="radio" name="spandex" id="yes" value="yes"> <br>
+            <label for="spandex"> No </label>
+            <input type="radio" name="spandex" id="no" value="no"> <br>
+
+            <br>
+
+            <label for="strength"> Strength: </label>
+            <input type="range" name="strength" id="strength" min="1" max="10"> <br>
+            <label for="speed"> Speed: </label>
+            <input type="range" name="speed" id="speed" min="1" max="10"> <br>
+            <label for="intelligence"> Intelligence: </label>
+            <input type="range" name="intelligence" id="intelligence" min="1" max="10"> <br>
+
+            <br>
+
+            <input type="submit" value="Submit tax form">
+
+            <script>
+                /* Tar hensyn til alle felter som ikke dekkes av "required"-keyword */
+                function validateForm(){
+                    if (document.forms["Form"]["gender"].value == ""){
+                        alert("Du må velge et kjønn");
+                        return false;
+                    }
+                    if (document.forms["Form"]["spandex"].value == ""){
+                        alert("Du må svare på alle spørsmål");
+                        return false;
+                    }
+                }
+            </script>
+
+
+        </form>
+    </body>
+</html>
